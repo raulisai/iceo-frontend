@@ -39,7 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
  Simulación Web con Agentes Autónomos
 Tecnologías Seleccionadas:
-Frontend: Svelte o React, utilizando librerías gráficas como Three.js o Babylon.js para una experiencia inmersiva.
+Frontend:React, utilizando librerías gráficas como Three.js o Babylon.js para una experiencia inmersiva.
 
 Backend: Python con Fast-agent para la creación y gestión de agentes autónomos.
 
