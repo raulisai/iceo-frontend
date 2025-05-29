@@ -21,7 +21,7 @@ const HexagonalTaskStats: React.FC<HexagonalTaskStatsProps> = ({ stats, classNam
   // Arrange hexagons in honeycomb pattern - odd rows offset
   const createHoneycombPattern = () => {
     const rows = 5; // Number of rows in the honeycomb
-    const hexagonsPerRow = [4, 5, 4,6]; // Hexagons in each row for nice honeycomb look
+    const hexagonsPerRow = [4, 5, 5,6]; // Hexagons in each row for nice honeycomb look
     let hexIndex = 0;
     const pattern = [];
 
