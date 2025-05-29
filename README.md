@@ -34,3 +34,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+#proyecto iceo
+
+ Simulación Web con Agentes Autónomos
+Tecnologías Seleccionadas:
+Frontend: Svelte o React, utilizando librerías gráficas como Three.js o Babylon.js para una experiencia inmersiva.
+
+Backend: Python con Fast-agent para la creación y gestión de agentes autónomos.
+
+Orquestación: Kubernetes para el despliegue y gestión de contenedores de los agentes.
+
+Comunicación: Uso de una cola de mensajes como RabbitMQ o Redis para la comunicación eficiente entre agentes.
+
+Estructura del Proyecto:
+Frontend Interactivo:
+
+Interfaz que simula un entorno de videojuego, donde los usuarios pueden seleccionar y colocar agentes en "oficinas" virtuales.
+
+Comunicación en tiempo real con el backend para actualizar estados y coordinar las acciones de los agentes.
