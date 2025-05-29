@@ -34,11 +34,11 @@ export default function Home() {
         <div className="flex flex-col md:flex-row h-full">
           <div className="md:w-2/3 p-8 z-10">
             <h1 className="text-4xl font-bold mb-6 text-white">ICEO</h1>
-            <p className="text-lg text-cyan-300 mb-8">Agentes Autónomos</p>
+            
             
             {/* System Stats Section with Hexagonal Task Visualization */}
-            <div className="bg-slate-900/80 p-6 rounded-lg border border-cyan-800/50 backdrop-blur-sm mb-8 shadow-lg shadow-cyan-900/20">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Estadísticas del Sistema</h2>
+            <div className=" p-6 rounded-lg   backdrop-blur-sm mb-8">
+              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Tasks stats</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Hexagonal Task Statistics */}
@@ -48,19 +48,19 @@ export default function Home() {
                 
                 {/* Additional System Statistics */}
                 <div className="space-y-4">
-                  <div className="p-4 bg-gray-800/50 rounded border border-cyan-900/50">
-                    <p className="text-red-400 font-medium">Errores Activos</p>
-                    <p className="text-2xl font-bold">{taskStats.error} críticos</p>
+                  <div className="p-4 bg-opacity-70 bg-gray-900 rounded-lg border border-red-500/30 shadow-md backdrop-blur-sm transition-all duration-300 hover:bg-opacity-80 hover:border-red-500/50">
+                    <p className="text-red-400 font-mono uppercase text-sm tracking-wider">Errores Activos</p>
+                    <p className="text-2xl font-bold text-white">{taskStats.error} críticos</p>
                   </div>
                   
-                  <div className="p-4 bg-gray-800/50 rounded border border-cyan-900/50">
-                    <p className="text-amber-400 font-medium">Agentes que necesitan ayuda</p>
-                    <p className="text-2xl font-bold">2</p>
+                  <div className="p-4 bg-opacity-70 bg-gray-900 rounded-lg border border-amber-500/30 shadow-md backdrop-blur-sm transition-all duration-300 hover:bg-opacity-80 hover:border-amber-500/50">
+                    <p className="text-amber-400 font-mono uppercase text-sm tracking-wider">Agentes que necesitan ayuda</p>
+                    <p className="text-2xl font-bold text-white">2</p>
                   </div>
                   
-                  <div className="p-4 bg-gray-800/50 rounded border border-cyan-900/50">
-                    <p className="text-green-400 font-medium">Total Agentes Activos</p>
-                    <p className="text-2xl font-bold">12</p>
+                  <div className="p-4 bg-opacity-70 bg-gray-900 rounded-lg border border-green-500/30 shadow-md backdrop-blur-sm transition-all duration-300 hover:bg-opacity-80 hover:border-green-500/50">
+                    <p className="text-green-400 font-mono uppercase text-sm tracking-wider">Total Agentes Activos</p>
+                    <p className="text-2xl font-bold text-white">12</p>
                   </div>
                 </div>
               </div>
