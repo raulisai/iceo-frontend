@@ -10,9 +10,9 @@ import * as THREE from 'three';
  */
 export default function EdificioCorporativo() {
   return (
-    <div className="h-[80vh]  md:mt-80 mt-30 select-none absolute top-0 left-0 right-0 drop-shadow-lg">
+    <div className="md:h-[90vh] md:mt-40 select-none absolute top-0 left-0 right-0 drop-shadow-lg">
       <Canvas
-        camera={{ position: [0, 2, 7], fov: 45 }}
+        camera={{ position: [10, 12, 10], fov: 25 }}
         shadows
       >
         <ambientLight intensity={0.3} />

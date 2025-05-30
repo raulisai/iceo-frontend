@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       {/* Main content */}
-      <div className="flex flex-col md:flex-row h-screen ">
+      <div className="flex flex-col md:flex-row  ">
         <div className=" md:w-1/4">
           <h1 className="text-4xl font-bold mb-6 text-white">ICEO</h1>
           {/* System Stats Section with Hexagonal Task Visualization */}
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div className="md:w-2/4 ">
           {/* Edificio Corporativo - apilado de pisos */}
-          <div className=" w-screen">
+          <div className=" ">
             <EdificioCorporativo />
           </div>
         </div>
