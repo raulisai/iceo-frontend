@@ -38,9 +38,20 @@ export default function Home() {
       <div className="h-full bg-[#00040E]">
         <div className="flex flex-col h-[98vh] md:flex-row">
           <div className=" md:w-1/4">
-            <h1 className="text-6xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600 drop-shadow-lg tracking-tight">ICEO</h1>
+            <motion.h1 
+              className="text-center text-6xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-600 to-violet-500 drop-shadow-[0_0_15px_rgba(147,51,234,0.5)] tracking-tight"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              whileHover={{ 
+                scale: 1.05, 
+                textShadow: "0 0 20px rgba(139,92,246,0.8)" 
+              }}
+            >
+              ICEO
+            </motion.h1>
             {/* System Stats Section with Hexagonal Task Visualization */}
-            <div className=" p-6 rounded-lg   backdrop-blur-sm mb-8 md:mt-64">
+            <div className=" p-6 rounded-lg   backdrop-blur-sm mb-8 md:mt-4">
               <h2 className="text-2xl font-bold text-cyan-400 mb-4">Tasks stats</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-1 gap-6 ">

@@ -21,7 +21,7 @@ const HexagonalTaskStats: React.FC<HexagonalTaskStatsProps> = ({ stats, classNam
   // Arrange hexagons in honeycomb pattern - odd rows offset
   const createHoneycombPattern = () => {
     const rows = 5; // Number of rows in the honeycomb
-    const hexagonsPerRow = [4, 5, 5,6]; // Hexagons in each row for nice honeycomb look
+    const hexagonsPerRow = [2, 4, 4,4,5]; // Hexagons in each row for nice honeycomb look
     let hexIndex = 0;
     const pattern = [];
 
@@ -51,7 +51,7 @@ const HexagonalTaskStats: React.FC<HexagonalTaskStatsProps> = ({ stats, classNam
   const honeycombPattern = createHoneycombPattern();
   
   return (
-    <div className={`${className} relative`}>
+    <div className={`${className} absolute`}>
       <div className="relative mb-4">
         <h3 className="text-xl font-bold text-cyan-400">Tareas Completadas</h3>
         <div className="flex items-center mt-2">
@@ -138,16 +138,20 @@ const Hexagon: React.FC<HexagonProps> = ({ isError, isCompleted, delay }) => {
         opacity: isCompleted ? 1 : 0.4,
         scale: isCompleted ? 1 : 0.9
       }}
+      whileHover={{ scale: 1.12, boxShadow: isError ? '0 0 30px #f87171' : '0 0 30px #00e6cc', rotate: isCompleted ? 2 : 0 }}
+      whileTap={{ scale: 0.98 }}
       transition={{ 
         duration: 0.5, 
         delay,
         ease: "easeOut" 
       }}
       style={{
-        width: '40px',
-        height: '46px',
+        width: '70px',
+        height: '85px',
         position: 'relative',
-        margin: '3px',
+        margin: '8px',
+        cursor: 'pointer',
+        zIndex: 1
       }}
     >
       {/* Hexagon Border */}
@@ -157,10 +161,15 @@ const Hexagon: React.FC<HexagonProps> = ({ isError, isCompleted, delay }) => {
           width: '100%',
           height: '100%',
           clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-          backgroundColor: 'transparent',
-          border: `1px solid ${isError ? '#f87171' : isCompleted ? '#2dd4bf' : '#475569'}`,
-          boxShadow: borderGlow,
-          transition: 'all 0.3s ease',
+          background: isError
+            ? 'linear-gradient(135deg, #ff003c 0%, #ff5f6d 100%)'
+            : 'rgba(0, 20, 40, 0.5)',
+          border: `3.5px solid ${isError ? '#ff003c' : isCompleted ? '#00e6cc' : '#475569'}`,
+          boxShadow: isError
+            ? '0 0 32px 8px #ff003c, 0 0 16px 2px #ff5f6d'
+            : borderGlow,
+          animation: isError ? 'errorPulse 1.1s infinite alternate' : 'none',
+          transition: 'all 0.3s cubic-bezier(0.4, 1.2, 0.6, 1)',
         }}
       />
       
@@ -180,7 +189,7 @@ const Hexagon: React.FC<HexagonProps> = ({ isError, isCompleted, delay }) => {
           width: '100%',
           backgroundImage: isError 
             ? 'linear-gradient(to top, rgba(239, 68, 68, 0.8), rgba(239, 68, 68, 0.3))'
-            : 'linear-gradient(to top, rgba(45, 212, 191, 0.8), rgba(45, 212, 191, 0.2))',
+            : 'linear-gradient(to top, rgba(0, 230, 200, 0.8), rgba(0, 230, 200, 0.2))',
           clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
           zIndex: -1,
         }}
@@ -194,7 +203,14 @@ const Hexagon: React.FC<HexagonProps> = ({ isError, isCompleted, delay }) => {
           transition={{ delay: delay + 0.5 }}
           className="absolute inset-0 flex items-center justify-center"
         >
-          <span className="text-white text-sm font-bold animate-pulse">!</span>
+          <span style={{
+            color: '#fff',
+            fontWeight: 900,
+            fontSize: '2.6rem',
+            textShadow: '0 0 18px #ff003c, 0 0 8px #fff',
+            filter: 'drop-shadow(0 0 8px #ff003c)',
+            animation: 'errorPulse 1.1s infinite alternate',
+          }}>!</span>
         </motion.div>
       )}
     </motion.div>
