@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div className="md:w-2/4 ">
           {/* Edificio Corporativo - apilado de pisos */}
-          <div className="">
+          <div className=" w-screen">
             <EdificioCorporativo />
           </div>
         </div>

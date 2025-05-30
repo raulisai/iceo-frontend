@@ -10,7 +10,7 @@ import * as THREE from 'three';
  */
 export default function EdificioCorporativo() {
   return (
-    <div className="h-[95vh] mt-20 select-none absolute top-0 left-0 right-0 drop-shadow-lg">
+    <div className="h-[80vh]  md:mt-80 mt-30 select-none absolute top-0 left-0 right-0 drop-shadow-lg">
       <Canvas
         camera={{ position: [0, 2, 7], fov: 45 }}
         shadows
@@ -21,7 +21,7 @@ export default function EdificioCorporativo() {
           intensity={1}
           castShadow
           shadow-mapSize-width={1024}
-          shadow-mapSize-height={1024}
+          shadow-mapSize-height={2048}
         />
         <directionalLight
           position={[-5, -5, 5]}
@@ -29,8 +29,8 @@ export default function EdificioCorporativo() {
           color="#0ff"
         />
         <pointLight position={[0, 5, 0]} intensity={0.5} color="#f0f" />
-        <fog attach="fog" args={['#020209', 5, 20]} />
-        <OrbitControls enableZoom={false} enablePan={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 4} />
+        <fog attach="fog" args={['#020209', 5, 40]} />
+        <OrbitControls enableZoom={true} enablePan={true} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 4} />
         <Edificio />
       </Canvas>
     </div>
@@ -196,10 +196,10 @@ function Edificio() {
   
   // Configuración de los pisos
   const pisos: PisoConfig[] = [
-    { number: 1, position: [0, 0, 0], size: [4, 0.5, 3], active: true },
-    { number: 2, position: [0, 0.7, 0], size: [3.5, 0.5, 2.5], active: false },
-    { number: 3, position: [0, 1.4, 0], size: [3, 0.5, 2], active: false },
-    { number: 4, position: [0, 2.1, 0], size: [2.5, 0.5, 1.5], active: false }
+    { number: 1, position: [0, 0, 0], size: [2.5, 0.7, 1.8], active: true },
+    { number: 2, position: [0, 0.7, 0], size: [2.2, 0.6, 1.6], active: false },
+    { number: 3, position: [0, 1.4, 0], size: [1.9, 0.6, 1.4], active: false },
+    { number: 4, position: [0, 2.1, 0], size: [1.7, 0.5, 1.2], active: false }
   ];
   
   // Animación suave del edificio
