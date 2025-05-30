@@ -30,7 +30,17 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative min-h-screen w-full overflow-hidden">
+      <div
+  className="relative min-h-screen w-full overflow-hidden"
+  style={{
+    backgroundImage: 'url(/backgraund.jpg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '100vh',
+    width: '100%'
+  }}
+>
         {/* Main content */}
         <div className="flex flex-col md:flex-row h-full">
           <div className="md:w-2/3 p-8 z-10">
