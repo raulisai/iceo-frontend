@@ -4,6 +4,7 @@ import Image from "next/image";
 import HexagonalTaskStats from "../components/HexagonalTaskStats";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import EdificioCorporativo from "../components/EdificioCorporativo";
 
 export default function Home() {
   // Mock data for task statistics - in a real app this would come from an API
@@ -29,18 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <div
-  className="relative min-h-screen w-full overflow-hidden"
-  style={{
-    backgroundImage: 'url(/backgraund.jpg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    minHeight: '100vh',
-    width: '100%'
-  }}
->
+      <>
         {/* Main content */}
         <div className="flex flex-col md:flex-row h-full">
           <div className="md:w-2/3 p-8 z-10">
@@ -111,21 +101,11 @@ export default function Home() {
            
           </div>
           
-          {/* Image container - right aligned, almost full height */}
+          {/* Edificio Corporativo - apilado de pisos */}
           <div className="absolute right-0 top-0 h-full flex items-center justify-end pr-4 -mr-30 ">
-            <div className="h-[85vh] relative">
-              <Image
-                src="/build.png"
-                alt="ICEO Building"
-                style={{ objectFit: 'contain', height: '100%', width: 'auto' }}
-                width={500}
-                height={800}
-                priority
-              />
-            </div>
+            <EdificioCorporativo />
           </div>
         </div>
-      </div>
-    </>
+      </>
   );
 }
