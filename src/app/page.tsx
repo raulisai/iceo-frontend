@@ -39,8 +39,8 @@ export default function Home() {
             <div className="mt-32 md:mt-64 flex justify-center">
               <div className="grid grid-cols-4 md:gap-40 gap-4 max-w-md">
                 {[
-                  { label: "Crear Oficina", icon: "🏢" },
-                  { label: "Crear Agente", icon: "🤖" },
+                  { label: "Oficina", icon: "🏢" },
+                  { label: "Hiring", icon: "🤖" },
                   { label: "Editar Agentes", icon: "⚙️" },
                   { label: "Config", icon: "⚡" }
                 ].map((btn, index) => (
