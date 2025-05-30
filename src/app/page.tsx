@@ -7,6 +7,7 @@ import EdificioCorporativo from "../components/EdificioCorporativo";
 import { useRouter } from "next/navigation";
 import DockMenu from "@/components/dock-menu";
 import ChatAssistant from "@/components/chat-assitent";
+import AgentNewsAndStats from "@/components/AgentNewsAndStats";
 
 export default function Home() {
   const router = useRouter();
@@ -102,9 +103,10 @@ export default function Home() {
             {/* Edificio Corporativo - apilado de pisos */}
             <EdificioCorporativo />
           </div>
-          {/* Chat assistant floating component */}
+          {/* Agent stats, news and chat assistant section */}
           <div className="md:w-1/4">
-            {/* The chat will be floating and draggable, so we don't need content here */}
+           
+            <AgentNewsAndStats />
           </div>
           
           {/* Floating chat assistant that can be dragged anywhere on screen */}
