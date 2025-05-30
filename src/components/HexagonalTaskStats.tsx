@@ -67,7 +67,7 @@ const HexagonalTaskStats: React.FC<HexagonalTaskStatsProps> = ({ stats, classNam
           {stats.error > 0 && (
             <motion.div 
               className="ml-auto flex items-center"
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >

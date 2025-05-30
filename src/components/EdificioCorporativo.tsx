@@ -10,9 +10,9 @@ import * as THREE from 'three';
  */
 export default function EdificioCorporativo() {
   return (
-    <div className="md:h-[90vh] md:mt-40 select-none absolute top-0 left-0 right-0 drop-shadow-lg">
+    <div className="md:h-[75vh] md:mt-80 mt-32 select-none top-0 left-0 right-0 drop-shadow-lg">
       <Canvas
-        camera={{ position: [10, 12, 10], fov: 25 }}
+        camera={{ position: [10, 12, 10], fov: 20 }}
         shadows
       >
         <ambientLight intensity={0.3} />
@@ -29,7 +29,7 @@ export default function EdificioCorporativo() {
           color="#0ff"
         />
         <pointLight position={[0, 5, 0]} intensity={0.5} color="#f0f" />
-        <fog attach="fog" args={['#020209', 5, 40]} />
+        <fog attach="fog" args={['#01717B', 5, 40]} />
         <OrbitControls enableZoom={true} enablePan={true} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 4} />
         <Edificio />
       </Canvas>

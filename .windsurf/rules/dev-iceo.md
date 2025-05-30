@@ -42,7 +42,7 @@ Eventos tipo “misión”, “error del sistema” o “interacción con otro a
 Pueden existir acciones en cadena (una acción de un agente detona actividad en otro).
 
 5. Diseño Visual
-Aesthetic tipo “retro-futurista”, “sci-fi”, o “pixel UI”.
+Aesthetic tipo “retro-futurista”, “minimalista”, o “pixel UI”.
 
 Música o sonidos opcionales tipo juego.
 
