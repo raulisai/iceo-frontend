@@ -170,6 +170,118 @@ export function getMockAgents(): Agent[] {
         reliability: 94,
         specialization: 93
       }
+    },
+    {
+      id: 'agent-007',
+      name: 'VelocityOps',
+      role: 'DevOps Engineer',
+      avatar: '/images/agents/robot.gif',
+      background: '/images/backgrounds/devops-bg.jpg',
+      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
+      specialty: 'AWS/Terraform',
+      experience: 6,
+      tools: [
+        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
+        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
+        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
+        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
+      ],
+      mcps: [
+        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
+        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
+        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
+      ],
+      stats: {
+        speed: 90,
+        accuracy: 92,
+        creativity: 85,
+        reliability: 94,
+        specialization: 93
+      }
+    },
+    {
+      id: 'agent-008',
+      name: 'VelocityOps',
+      role: 'DevOps Engineer',
+      avatar: '/images/agents/robot.gif',
+      background: '/images/backgrounds/devops-bg.jpg',
+      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
+      specialty: 'AWS/Terraform',
+      experience: 6,
+      tools: [
+        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
+        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
+        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
+        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
+      ],
+      mcps: [
+        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
+        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
+        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
+      ],
+      stats: {
+        speed: 90,
+        accuracy: 92,
+        creativity: 85,
+        reliability: 94,
+        specialization: 93
+      }
+    },
+    {
+      id: 'agent-009',
+      name: 'VelocityOps',
+      role: 'DevOps Engineer',
+      avatar: '/images/agents/robot.gif',
+      background: '/images/backgrounds/devops-bg.jpg',
+      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
+      specialty: 'AWS/Terraform',
+      experience: 6,
+      tools: [
+        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
+        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
+        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
+        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
+      ],
+      mcps: [
+        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
+        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
+        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
+      ],
+      stats: {
+        speed: 90,
+        accuracy: 92,
+        creativity: 85,
+        reliability: 94,
+        specialization: 93
+      }
+    },
+    {
+      id: 'agent-010',
+      name: 'VelocityOps',
+      role: 'DevOps Engineer',
+      avatar: '/images/agents/robot.gif',
+      background: '/images/backgrounds/devops-bg.jpg',
+      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
+      specialty: 'AWS/Terraform',
+      experience: 6,
+      tools: [
+        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
+        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
+        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
+        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
+      ],
+      mcps: [
+        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
+        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
+        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
+      ],
+      stats: {
+        speed: 90,
+        accuracy: 92,
+        creativity: 85,
+        reliability: 94,
+        specialization: 93
+      }
     }
   ];
 }
