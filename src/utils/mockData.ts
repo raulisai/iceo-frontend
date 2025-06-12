@@ -124,7 +124,7 @@ export function getMockAgents(): Agent[] {
       name: 'Accountant',
       role: 'Contador',
       area: 'Administracion',
-      avatar: '/images/agents/robot.gif',
+      avatar: '/images/agents/account.png',
       background: '/images/backgrounds/account.jpg',
       description: 'Experto en ciberseguridad con especialización en criptografía y protección de sistemas distribuidos. Detecta y neutraliza amenazas antes de que se materialicen.',
       specialty: 'Blockchain/Crypto',
