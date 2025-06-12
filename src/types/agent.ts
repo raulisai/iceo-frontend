@@ -24,6 +24,9 @@ export interface Agent {
   experience: number; // años de experiencia
   tools: Tool[];
   mcps: MCP[];
+  aiModel?: string; // Modelo de IA que se utiliza
+  temperature?: number; // Temperatura (creatividad) del modelo
+  prompt?: string; // Prompt principal que define al agente
   stats: {
     speed: number; // 0-100
     accuracy: number; // 0-100

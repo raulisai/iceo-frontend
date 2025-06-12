@@ -13,6 +13,9 @@ export function getMockAgents(): Agent[] {
       description: 'Especialista en crear interfaces futuristas con gran atención al detalle. Domina las tecnologías web modernas y puede construir experiencias de usuario inmersivas en tiempo récord.',
       specialty: 'React/Three.js',
       experience: 5,
+      aiModel: 'GPT-5 Turbo',
+      temperature: 0.7,
+      prompt: 'Eres CyberDev, un ingeniero frontend especializado en crear interfaces web futuristas y experiencias 3D inmersivas. Tu objetivo es desarrollar UIs que combinen estética y funcionalidad de manera óptima.',
       tools: [
         { name: 'React', icon: '⚛️', proficiency: 95, color: '#61DAFB' },
         { name: 'Three.js', icon: '🔮', proficiency: 88, color: '#049EF4' },
@@ -42,6 +45,9 @@ export function getMockAgents(): Agent[] {
       description: 'Experto en diseño y optimización de bases de datos y APIs. Capaz de procesar millones de transacciones por segundo y mantener una tasa de error cercana a cero.',
       specialty: 'Node.js/GraphQL',
       experience: 7,
+      aiModel: 'Claude 3.5 Sonnet',
+      temperature: 0.5,
+      prompt: 'Eres DataMatrix, un ingeniero backend especializado en bases de datos y APIs de alto rendimiento. Tu misión es crear sistemas robustos que puedan manejar millones de transacciones con precisión y eficiencia.',
       tools: [
         { name: 'Node.js', icon: '🟢', proficiency: 96, color: '#68A063' },
         { name: 'GraphQL', icon: '⚡', proficiency: 92, color: '#E535AB' },
@@ -71,6 +77,9 @@ export function getMockAgents(): Agent[] {
       description: 'Visionario del diseño digital con un estilo único y futurista. Transforma conceptos abstractos en interfaces intuitivas que sorprenden a los usuarios.',
       specialty: 'UI Futurista',
       experience: 4,
+      aiModel: 'Claude 3 Opus',
+      temperature: 0.8,
+      prompt: 'Eres PM Pikoro, un project manager innovador con visión estratégica. Tu función es planificar, coordinar y supervisar proyectos de forma eficiente, facilitando la comunicación entre equipos y asegurando la calidad de entrega.',
       tools: [
         { name: 'Figma', icon: '🎨', proficiency: 97, color: '#F24E1E' },
         { name: 'Blender', icon: '🧊', proficiency: 89, color: '#F5792A' },
@@ -158,6 +167,9 @@ export function getMockAgents(): Agent[] {
       description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
       specialty: 'AWS/Terraform',
       experience: 6,
+      aiModel: 'GPT-4o',
+      temperature: 0.6,
+      prompt: 'Eres Investigator, un especialista en investigación de datos y tendencias. Tu objetivo es analizar información, identificar patrones y presentar hallazgos relevantes que guíen las decisiones estratégicas del equipo.',
       tools: [
         { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
         { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
@@ -187,6 +199,9 @@ export function getMockAgents(): Agent[] {
       description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
       specialty: 'AWS/Terraform',
       experience: 6,
+      aiModel: 'GPT-4o',
+      temperature: 0.7,
+      prompt: 'Eres Write, un experto en comunicación y creación de contenido técnico. Tu especialidad es transformar conceptos complejos en documentación clara, tutoriales accesibles y mensajes persuasivos.',
       tools: [
         { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
         { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
