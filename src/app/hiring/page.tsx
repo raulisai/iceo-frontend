@@ -6,7 +6,7 @@ import { Agent } from '@/types/agent';
 import AgentDetailsPanel from '@/components/hiring/AgentDetailsPanel';
 import AgentCarousel from '@/components/hiring/AgentCarousel';
 import FilterBar from '@/components/hiring/FilterBar';
-import NavBar from '@/components/common/NavBar';
+import NavBar from '@/components/common/dock-menu';
 
 // Categorías de agentes
 const AGENT_CATEGORIES = [

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import EdificioCorporativo from "../components/EdificioCorporativo";
 import { useRouter } from "next/navigation";
-import DockMenu from "@/components/dock-menu";
+import DockMenu from "@/components/common/dock-menu";
 import ChatAssistant from "@/components/chat-assitent";
 import AgentNewsAndStats from "@/components/AgentNewsAndStats";
 
