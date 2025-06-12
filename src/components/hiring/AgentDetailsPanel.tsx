@@ -39,27 +39,10 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
     );
   };
 
-  // Renderizar barra de estadísticas
-  const renderStatBar = (value: number, label: string, color: string) => {
-    return (
-      <div className="mb-2">
-        <div className="flex justify-between text-xs mb-1">
-          <span className="text-gray-400">{label}</span>
-          <span className="text-gray-300">{value}%</span>
-        </div>
-        <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-          <div 
-            className={`h-full ${color} rounded-full`}
-            style={{ width: `${value}%` }}
-          ></div>
-        </div>
-      </div>
-    );
-  };
 
   return (
-    <div className="bg-gradient-to-b from-gray-800/70 to-gray-900/90 rounded-lg border border-blue-500/20 shadow-lg p-6 mt-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="max-w-3xl mx-auto bg-gradient-to-b from-gray-800/70 to-gray-900/90 rounded-lg border border-blue-500/20 shadow-lg p-6 mt-8">
+      <div className="flex flex-col md:flex-row gap-8 w-full">
         {/* Columna 1: Avatar, ID, Nombre, Rol, Especialidad, Experiencia, Modelo AI y Temperatura */}
         <div className="flex flex-col items-center md:items-start">
           <div className="relative w-32 h-32 mb-6">
@@ -68,7 +51,7 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
               alt={agent.name}
               width={128}
               height={128}
-              className="rounded-full border-4 border-blue-500/30 shadow-lg shadow-blue-900/30"
+              className="rounded-full border-4 border-blue-500/30 shadow-lg shadow-blue-900/30 mb-6 -mt-20"
               style={{ objectFit: 'cover' }}
             />
             <div className="absolute -bottom-2 -right-2 bg-gray-900 border border-blue-500/30 rounded-full px-2 py-1 text-xs text-gray-300 font-mono">
@@ -82,16 +65,7 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
           <div className="bg-blue-900/20 rounded-lg border border-blue-500/20 px-3 py-2 mb-4 w-full">
             <p className="text-sm text-gray-300 mb-1"><span className="text-blue-400">Especialidad:</span> {agent.specialty}</p>
             
-            <div className="flex items-center">
-              <span className="text-sm text-gray-300 mr-2"><span className="text-blue-400">Experiencia:</span></span>
-              <div className="flex-1 h-1.5 bg-gray-800 rounded-full">
-                <div 
-                  className="h-full bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full"
-                  style={{ width: `${agent.experience * 10}%` }}
-                ></div>
-              </div>
-              <span className="ml-2 text-xs text-gray-400">{agent.experience} años</span>
-            </div>
+            
           </div>
 
           <div className="bg-gray-850 rounded-lg border border-blue-500/20 px-3 py-2 mb-5 w-full">
@@ -117,20 +91,6 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
               </div>
             </div>
           </div>
-
-          {/* Estadísticas */}
-          <div className="w-full mt-2">
-            <h3 className="text-sm font-bold mb-3 text-blue-400">Estadísticas</h3>
-            {renderStatBar(agent.stats.speed, "Velocidad", "bg-green-600")}
-            {renderStatBar(agent.stats.accuracy, "Precisión", "bg-blue-600")}
-            {renderStatBar(agent.stats.creativity, "Creatividad", "bg-purple-600")}
-            {renderStatBar(agent.stats.reliability, "Fiabilidad", "bg-yellow-600")}
-            {renderStatBar(agent.stats.specialization, "Especialización", "bg-cyan-600")}
-          </div>
-        </div>
-
-        {/* Columna 2: Prompt y descripción */}
-        <div className="md:col-span-1 md:border-x border-blue-500/20 px-4 md:px-6">
           <div className="mb-6">
             <h3 className="text-lg font-bold mb-3 text-blue-400">Prompt</h3>
             <div className="bg-gray-800/70 border border-blue-500/30 rounded-lg p-3 font-mono text-sm mb-4">
@@ -142,10 +102,7 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
             <h3 className="text-lg font-bold mb-3 text-blue-400">Descripción</h3>
             <p className="text-gray-300 leading-relaxed whitespace-pre-line">{agent.description}</p>
           </div>
-        </div>
 
-        {/* Columna 3: Habilidades */}
-        <div className="md:col-span-1">
           <h3 className="text-lg font-bold mb-4 text-blue-400">Skills</h3>
           
           {/* Herramientas */}
@@ -165,18 +122,6 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
                     </div>
                     <div className="flex-1">
                       <p className="text-sm font-medium text-gray-200">{tool.name}</p>
-                      <div className="w-full mt-1">
-                        <div className="h-1.5 bg-gray-700 rounded-full">
-                          <div
-                            className="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"
-                            style={{ width: `${tool.proficiency}%` }}
-                          ></div>
-                        </div>
-                        <div className="flex justify-between text-xs mt-1">
-                          <span className="text-gray-400">Proficiencia</span>
-                          <span className="text-blue-300">{tool.proficiency}%</span>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 ))}
