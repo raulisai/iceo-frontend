@@ -18,11 +18,11 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
             title={item.name}
           >
             <div className={`
-              w-10 h-10 flex items-center justify-center rounded-lg
+              w-8 h-8 flex items-center justify-center rounded-md
               ${type === 'tool' ? 'bg-blue-900/60' : 'bg-purple-900/60'}
               border border-blue-500/30 shadow-lg hover:scale-110 transition-transform
             `}>
-              <span className="text-xl" role="img" aria-label={item.name}>
+              <span className="text-lg" role="img" aria-label={item.name}>
                 {item.icon}
               </span>
             </div>
@@ -114,18 +114,7 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
               </span>
             </div>
             {agent.tools.length > 0 ? (
-              <div className="space-y-3">
-                {agent.tools.map((tool, idx) => (
-                  <div key={idx} className="flex items-center bg-gray-800/50 rounded-lg p-2 border border-blue-500/10">
-                    <div className="mr-3 bg-blue-900/40 rounded-lg w-10 h-10 flex items-center justify-center border border-blue-500/30">
-                      <span className="text-xl">{tool.icon}</span>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-gray-200">{tool.name}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              renderSkillIcons(agent.tools, 'tool')
             ) : (
               <p className="text-sm text-gray-500">Sin herramientas asignadas</p>
             )}
@@ -140,31 +129,7 @@ const AgentDetailsPanel: React.FC<AgentDetailsPanelProps> = ({ agent }) => {
               </span>
             </div>
             {agent.mcps.length > 0 ? (
-              <div className="space-y-3">
-                {agent.mcps.map((mcp, idx) => (
-                  <div key={idx} className="flex items-center bg-gray-800/50 rounded-lg p-2 border border-purple-500/10">
-                    <div className="mr-3 bg-purple-900/40 rounded-lg w-10 h-10 flex items-center justify-center border border-purple-500/30">
-                      <span className="text-xl">{mcp.icon}</span>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-gray-200">{mcp.name}</p>
-                      <div className="flex justify-between text-xs mt-1">
-                        <span className="text-gray-400">Nivel</span>
-                        <div className="flex">
-                          {[...Array(5)].map((_, i) => (
-                            <span 
-                              key={i} 
-                              className={`mx-px text-xs ${i < mcp.level ? 'text-purple-400' : 'text-gray-600'}`}
-                            >
-                              ★
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              renderSkillIcons(agent.mcps, 'mcp')
             ) : (
               <p className="text-sm text-gray-500">Sin MCPs asignados</p>
             )}
