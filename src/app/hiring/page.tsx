@@ -176,27 +176,6 @@ export default function HiringPage() {
             <h3 className="text-blue-300 font-mono mb-2">MCPs</h3>
             {selectedAgent && renderSkillIcons(selectedAgent.mcps, 'mcp')}
           </div>
-
-          {/* Estadísticas */}
-          <div className="mt-6">
-            <h3 className="text-blue-300 font-mono mb-3">Estadísticas</h3>
-            <div className="grid grid-cols-2 gap-4">
-              {selectedAgent && Object.entries(selectedAgent.stats).map(([key, value]) => (
-                <div key={key} className="flex flex-col">
-                  <div className="flex justify-between text-sm mb-1">
-                    <span className="text-gray-300 font-mono capitalize">{key}</span>
-                    <span className="text-blue-300 font-mono">{Math.round(value)}%</span>
-                  </div>
-                  <div className="h-2 bg-gray-700 rounded overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-blue-600 to-cyan-400"
-                      style={{ width: `${value}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Panel derecho: Parámetros editables */}

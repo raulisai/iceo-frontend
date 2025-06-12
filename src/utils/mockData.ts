@@ -7,7 +7,7 @@ export function getMockAgents(): Agent[] {
       id: 'agent-001',
       name: 'CyberDev',
       role: 'Ingeniero Frontend',
-      avatar: '/images/agents/robot.gif',
+      avatar: '/images/agents/developer_frontend.png',
       background: '/images/backgrounds/code-bg.jpg',
       description: 'Especialista en crear interfaces futuristas con gran atención al detalle. Domina las tecnologías web modernas y puede construir experiencias de usuario inmersivas en tiempo récord.',
       specialty: 'React/Three.js',
@@ -35,7 +35,7 @@ export function getMockAgents(): Agent[] {
       id: 'agent-002',
       name: 'DataMatrix',
       role: 'Ingeniero Backend',
-      avatar: '/images/agents/robot.gif',
+      avatar: '/images/agents/developer.png',
       background: '/images/backgrounds/server-bg.jpg',
       description: 'Experto en diseño y optimización de bases de datos y APIs. Capaz de procesar millones de transacciones por segundo y mantener una tasa de error cercana a cero.',
       specialty: 'Node.js/GraphQL',
@@ -61,10 +61,10 @@ export function getMockAgents(): Agent[] {
     },
     {
       id: 'agent-003',
-      name: 'NeoDesign',
-      role: 'Diseñador UI/UX',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/design-bg.jpg',
+      name: 'PM Pikoro',
+      role: 'Proyect Manager',
+      avatar: '/images/agents/project_manager.png',
+      background: '/images/backgrounds/project_manager.png',
       description: 'Visionario del diseño digital con un estilo único y futurista. Transforma conceptos abstractos en interfaces intuitivas que sorprenden a los usuarios.',
       specialty: 'UI Futurista',
       experience: 4,
@@ -89,10 +89,10 @@ export function getMockAgents(): Agent[] {
     },
     {
       id: 'agent-004',
-      name: 'QuantumAI',
-      role: 'Ingeniero ML/AI',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/ai-bg.jpg',
+      name: 'ScrumMaster-juan',
+      role: 'ScrumMaster',
+      avatar: '/images/agents/scrum_master.png',
+      background: '/images/backgrounds/scrum_master.png',
       description: 'Especialista en integración de algoritmos de aprendizaje automático en aplicaciones web. Crea sistemas inteligentes que mejoran con cada interacción.',
       specialty: 'TensorFlow/PyTorch',
       experience: 6,
@@ -117,10 +117,10 @@ export function getMockAgents(): Agent[] {
     },
     {
       id: 'agent-005',
-      name: 'CryptoGuard',
-      role: 'Ingeniero de Seguridad',
+      name: 'Accountant',
+      role: 'Contador',
       avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/security-bg.jpg',
+      background: '/images/backgrounds/account.jpg',
       description: 'Experto en ciberseguridad con especialización en criptografía y protección de sistemas distribuidos. Detecta y neutraliza amenazas antes de que se materialicen.',
       specialty: 'Blockchain/Crypto',
       experience: 8,
@@ -145,10 +145,10 @@ export function getMockAgents(): Agent[] {
     },
     {
       id: 'agent-006',
-      name: 'VelocityOps',
-      role: 'DevOps Engineer',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/devops-bg.jpg',
+      name: 'Investigator',
+      role: 'Investigador',
+      avatar: '/images/agents/investigator.png',
+      background: '/images/backgrounds/investigator.png',
       description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
       specialty: 'AWS/Terraform',
       experience: 6,
@@ -173,94 +173,10 @@ export function getMockAgents(): Agent[] {
     },
     {
       id: 'agent-007',
-      name: 'VelocityOps',
+      name: 'Write',
       role: 'DevOps Engineer',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/devops-bg.jpg',
-      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
-      specialty: 'AWS/Terraform',
-      experience: 6,
-      tools: [
-        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
-        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
-        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
-        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
-      ],
-      mcps: [
-        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
-        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
-        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
-      ],
-      stats: {
-        speed: 90,
-        accuracy: 92,
-        creativity: 85,
-        reliability: 94,
-        specialization: 93
-      }
-    },
-    {
-      id: 'agent-008',
-      name: 'VelocityOps',
-      role: 'DevOps Engineer',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/devops-bg.jpg',
-      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
-      specialty: 'AWS/Terraform',
-      experience: 6,
-      tools: [
-        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
-        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
-        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
-        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
-      ],
-      mcps: [
-        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
-        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
-        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
-      ],
-      stats: {
-        speed: 90,
-        accuracy: 92,
-        creativity: 85,
-        reliability: 94,
-        specialization: 93
-      }
-    },
-    {
-      id: 'agent-009',
-      name: 'VelocityOps',
-      role: 'DevOps Engineer',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/devops-bg.jpg',
-      description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
-      specialty: 'AWS/Terraform',
-      experience: 6,
-      tools: [
-        { name: 'Terraform', icon: '🏗️', proficiency: 95, color: '#7B42BC' },
-        { name: 'Kubernetes', icon: '⚓', proficiency: 92, color: '#326CE5' },
-        { name: 'AWS', icon: '☁️', proficiency: 94, color: '#FF9900' },
-        { name: 'Prometheus', icon: '📊', proficiency: 88, color: '#E6522C' }
-      ],
-      mcps: [
-        { name: 'Infrastructure Mind', icon: '🧩', level: 5, description: 'Diseño automático de arquitecturas optimizadas para cada caso de uso.' },
-        { name: 'Auto Scaling', icon: '⚖️', level: 4, description: 'Ajuste dinámico de recursos basado en métricas en tiempo real.' },
-        { name: 'Disaster Recovery', icon: '🔄', level: 5, description: 'Planes de recuperación instantáneos ante fallos inesperados.' }
-      ],
-      stats: {
-        speed: 90,
-        accuracy: 92,
-        creativity: 85,
-        reliability: 94,
-        specialization: 93
-      }
-    },
-    {
-      id: 'agent-010',
-      name: 'VelocityOps',
-      role: 'DevOps Engineer',
-      avatar: '/images/agents/robot.gif',
-      background: '/images/backgrounds/devops-bg.jpg',
+      avatar: '/images/agents/write.png',
+      background: '/images/backgrounds/write.png',
       description: 'Maestro de la automatización y orquestación de sistemas. Construye pipelines de CI/CD que reducen el tiempo de despliegue de días a minutos.',
       specialty: 'AWS/Terraform',
       experience: 6,
