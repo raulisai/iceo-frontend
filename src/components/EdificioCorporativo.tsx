@@ -215,7 +215,7 @@ function Edificio() {
   const handlePisoClick = (pisoNumber: number) => {
     // Solo el piso 1 está habilitado para navegar
     if (pisoNumber === 1) {
-      router.push('/oficina');
+      router.push('/office/floor1');
     }
   };
 
