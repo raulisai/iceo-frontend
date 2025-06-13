@@ -21,7 +21,7 @@ export default function DockMenu() {
   const router = useRouter();
   
   const dockItems = [
-    { label: "Oficina", icon: "🏣", description: "Gestionar espacios y recursos de la oficina", color: "#448763", href: "/oficina" },
+    { label: "Oficina", icon: "🏣", description: "Gestionar espacios y recursos de la oficina", color: "#448763", href: "/" },
     { label: "Agentes", icon: "🧟‍♂️", description: "Ver y controlar agentes autónomos", color: "#448763", href: "/agentes" },
     { label: "Tasks", icon: "📝", description: "Administrar tareas y proyectos en curso", color: "#448763", href: "/tasks" },
     { label: "Config", icon: "🛠️", description: "Configuración del sistema y preferencias", color: "#448763", href: "/config" }
