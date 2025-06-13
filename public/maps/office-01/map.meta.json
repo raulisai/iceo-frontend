@@ -1,0 +1,134 @@
+{
+  "mapVersion": "1.0.1",
+  "name": "Upper Floor HQ – Enhanced",
+  "size": { "width": 40, "depth": 30, "unit": "m" },
+  "rooms": [
+    {
+      "id": "r-001",
+      "name": "Marketing",
+      "color": "#FF6B6B",
+      "position": { "x": -10, "z": -5 },
+      "mesh": "rooms/r-001.glb",
+      "agents": ["a-001"],
+      "dimensions": { "width": 8, "length": 10 },
+      "walls": [
+        { "start": { "x": -14, "z": -10 }, "end": { "x": -6, "z": -10 } },
+        { "start": { "x": -6, "z": -10 }, "end": { "x": -6, "z": 0 } },
+        { "start": { "x": -6, "z": 0 }, "end": { "x": -14, "z": 0 } },
+        { "start": { "x": -14, "z": 0 }, "end": { "x": -14, "z": -10 } }
+      ]
+    },
+    {
+      "id": "r-002",
+      "name": "Engineering",
+      "color": "#4ECDC4",
+      "position": { "x": 10, "z": -5 },
+      "mesh": "rooms/r-002.glb",
+      "agents": ["a-002", "a-003"],
+      "dimensions": { "width": 8, "length": 10 },
+      "walls": [
+        { "start": { "x": 6, "z": -10 }, "end": { "x": 14, "z": -10 } },
+        { "start": { "x": 14, "z": -10 }, "end": { "x": 14, "z": 0 } },
+        { "start": { "x": 14, "z": 0 }, "end": { "x": 6, "z": 0 } },
+        { "start": { "x": 6, "z": 0 }, "end": { "x": 6, "z": -10 } }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "id": "a-001",
+      "displayName": "Alice",
+      "team": "Marketing",
+      "avatar": "avatars/alice.glb",
+      "position": { "x": -10, "z": -5 },
+      "stats": {
+        "tasksCompleted": 12,
+        "efficiency": 0.87
+      },
+      "state": {
+        "currentAction": "writing-email",
+        "status": "active",
+        "lastUpdated": "2025-06-13T10:55:00Z"
+      },
+      "ai": {
+        "type": "fast-agent",
+        "model": "v1.3",
+        "canMakeDecisions": true,
+        "memory": {
+          "shortTerm": ["email to client X", "meeting scheduled"],
+          "longTerm": ["project alpha marketing strategy"]
+        }
+      }
+    },
+    {
+      "id": "a-002",
+      "displayName": "Bob",
+      "team": "Engineering",
+      "avatar": "avatars/bob.glb",
+      "position": { "x": 10, "z": -4 },
+      "stats": {
+        "tasksCompleted": 8,
+        "efficiency": 0.75
+      },
+      "state": {
+        "currentAction": "debugging",
+        "status": "active"
+      },
+      "ai": {
+        "type": "fast-agent",
+        "model": "v1.3",
+        "canMakeDecisions": true,
+        "memory": {
+          "shortTerm": ["error in module B", "fixing routing bug"]
+        }
+      }
+    },
+    {
+      "id": "a-003",
+      "displayName": "Carol",
+      "team": "Engineering",
+      "avatar": "avatars/carol.glb",
+      "position": { "x": 11, "z": -5 },
+      "stats": {
+        "tasksCompleted": 10,
+        "efficiency": 0.9
+      },
+      "state": {
+        "currentAction": "refactoring",
+        "status": "idle"
+      },
+      "ai": {
+        "type": "fast-agent",
+        "model": "v1.3",
+        "canMakeDecisions": false
+      }
+    }
+  ],
+  "doors": [
+    {
+      "from": "r-001",
+      "to": "r-002",
+      "position": { "x": 0, "z": -5 },
+      "width": 2,
+      "height": 2.2,
+      "orientation": 0
+    },
+    {
+      "from": "r-001",
+      "to": "outside",
+      "position": { "x": -10, "z": -10 },
+      "width": 2,
+      "height": 2.2,
+      "orientation": 90
+    },
+    {
+      "from": "r-002",
+      "to": "outside",
+      "position": { "x": 10, "z": -10 },
+      "width": 2,
+      "height": 2.2,
+      "orientation": 90
+    }
+  ],
+  "props": []
+}
